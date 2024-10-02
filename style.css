@@ -46,6 +46,13 @@ body{
     display: flex;
   
     gap: 15px;
+    transition: 1s;
+}
+.navbar__s3 i:hover{
+transform: translateY(-20px);
+transition: 1s;
+box-shadow: 2px 2px 8px 3px black;
+ 
 }
 .mylearning{
     position: relative;
@@ -60,6 +67,7 @@ body{
     padding: 20px;
     right: 0;
     display: none;
+    border-radius: 20px;
 }
 .mylearning:hover .mylearning__popup{
     display: block;
@@ -78,6 +86,15 @@ body{
 
     padding: 10px;
     border-radius: 30px;
+    border: 1px solid magenta;
+}
+.catagories p:hover{
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+    border: 1px solid magenta;
+    
 }
 .sale_image img{
     width: 100%;
@@ -95,6 +112,21 @@ body{
     padding: 2%;
     box-shadow: 2px 2px 2px 2px silver;
     border-radius: 10px;
+    animation: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .recommended{
     padding: 10px;
